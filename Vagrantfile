@@ -19,7 +19,7 @@ if [ ! -d /etc/puppet/modules/elasticsearch ]; then
 puppet module install elasticsearch-elasticsearch
 fi
 if [ ! -d /etc/puppet/modules/logstash ]; then
-puppet module install elasticsearch-logstash
+puppet module install elasticsearch-logstash --ignore-dependencies
 fi
 if [ ! -d /etc/puppet/modules/mongodb ]; then
 puppet module install puppetlabs-mongodb
